@@ -7,6 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About this project
+This is a personal fullstack Laravel, Eloquent ORM, PHP, Sqlite project named chatApp. chatApp is highly secured, with Cross-Site Forgery Attack Prevention and user authentication to prevent spam or bots. It's designed to allow users to text everyone in a group chat and send images between each other. There are no plans to commercially deploy the project. Also, I'm currently swamped with so many projects, this project might be kept this way for now. However, should it get improved, the first thing would be to have 1-1 chat options between users.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -63,3 +66,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Got any inquries? [Drop me an Email](mailto:donnyquickinc@gmail.com)
+
+#### ☕️ <a href="https://www.paypal.me/thientran2702">Buy me a coffee? </a>
