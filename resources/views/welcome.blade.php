@@ -83,7 +83,7 @@
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     There are no plans to commercially deploy the project. Also, I'm currently swamped with so many projects, this project might be kept this way for now. However, should it get improved, the first thing
-                                    would be to have 1-1 chat options between users.
+                                    would be to have 1 on 1 chat options between users.
                                 </div>
                             </div>
                         </div>
