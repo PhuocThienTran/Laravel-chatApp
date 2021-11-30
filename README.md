@@ -8,7 +8,7 @@
 </p>
 
 ## About this project
-This is a personal fullstack Laravel, Eloquent ORM, PHP, Sqlite project named chatApp. chatApp is highly secured, with Cross-Site Forgery Attack Prevention and user authentication to prevent spam or bots. It's designed to allow users to text everyone in a group chat and send images between each other. There are no plans to commercially deploy the project. Also, I'm currently swamped with so many projects, this project might be kept this way for now. However, should it get improved, the first thing would be to have 1-1 chat options between users.
+This is a personal fullstack Laravel, Eloquent ORM, PHP, SQLite project named chatApp. chatApp is highly secured, with Cross-Site Forgery Attack Prevention and user authentication to prevent spam or bots. It's designed to allow users to text everyone in a group chat and send images between each other. There are no plans to commercially deploy the project. Also, I'm currently swamped with so many projects, this project might be kept this way for now. However, should it get improved, the first thing would be to have 1-1 chat options between users.
 
 ## About Laravel
 
