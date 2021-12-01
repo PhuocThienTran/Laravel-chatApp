@@ -69,7 +69,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    chatApp is built upon Laravel, Eloquent ORM, PHP, and of course HTML/CSS.
+                                    chatApp is built upon Laravel, Eloquent ORM, PHP, SQLite and of course HTML/CSS.
                                 </div>
                             </div>
                         </div>
