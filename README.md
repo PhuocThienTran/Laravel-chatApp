@@ -10,6 +10,16 @@
 ## About this project
 This is a personal fullstack Laravel, Eloquent ORM, PHP, SQLite project named chatApp. chatApp is highly secured, with Cross-Site Forgery Attack Prevention and user authentication to prevent spam or bots. It's designed to allow users to text everyone in a group chat and send images between each other. There are no plans to commercially deploy the project. Also, I'm currently swamped with so many projects, this project might be kept this way for now. However, should it get improved, the first thing would be to have 1-1 chat options between users.
 
+## Want to run this project locally? 
+- [ ] [Download the latest Docker Hub for desktop](https://hub.docker.com/).
+- [ ] [Ensure Laravel is installed properly on your computer](https://laravel.com/docs/8.x/installation).
+- [ ] [Intsall the latest PHP version on your computer](https://www.php.net/manual/en/install.php).
+- [ ] Set up your Laravel webapp's folder structure on your computer.
+- [ ] Run your app via the Docker Hub for the project - as a ```localhost``` server, and edit the project via VScode.
+- [ ] [In case, you're getting a missing composer warning when running the project](https://getcomposer.org/download/)
+
+---------------------------
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -67,6 +77,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Got any inquries on this project? [Drop me an Email](mailto:donnyquickinc@gmail.com)
+---------------------------
 
-#### ☕️ <a href="https://www.paypal.me/thientran2702">Buy me a coffee? </a>
+### Got any inquries on this project? [Drop me an Email](mailto:donnyquickinc@gmail.com)
+
+### ☕️ <a href="https://www.paypal.me/thientran2702">Buy me a coffee? </a>
