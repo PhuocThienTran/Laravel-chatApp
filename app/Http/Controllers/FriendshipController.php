@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 /*
-    Controller page for following, where base functions are created for the Friendship class
+    Controller page for friendship, where base functions are created for the Friendship class
 */
 
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ use App\Models\Message;
 
 class FriendshipController extends Controller
 {
-    /* construct() for auth middleware, only index() and show() for "guests */
+    /* construct() for auth middleware, only index() and show() for "guests" */
     function __construct(){
         $this->middleware('auth');
     }
@@ -26,8 +26,8 @@ class FriendshipController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* index() is present in followingShow page with all the users' followings based on the Auth::id() of the user,
-        his/her reviews, and items */
+    /* index() is present in home page with all the users' friendships based on the Auth::id() of the user, 
+    his/her friendship, and users */
     public function index()
     {
         $userfriendship = User::find(Auth::id())->userfriendship;
@@ -44,7 +44,7 @@ class FriendshipController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    /* create() gets the create a new following form with all the users */
+    /* create() gets the create a new friendship form with all the users */
     public function create()
     {
         return view('friendshipCreate')
@@ -58,7 +58,7 @@ class FriendshipController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* store() takes all user inputs of a new following and store them into database  */
+    /* store() takes all user inputs of a new friendship and store them into database  */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -81,8 +81,7 @@ class FriendshipController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* show() displays all saved items in storage, with their respective paginated reviews
-    based on the $id of the item */
+
     public function show($id)
     {
         //
@@ -118,7 +117,7 @@ class FriendshipController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* destroy() takes the selected following and delete the following */
+    /* destroy() takes the selected friendship and delete the following */
     public function destroy($id)
     {
         $friendship = Friendship::where('user_id', '=', Auth::id())->where('friendship_user_id', '=', $id)->delete();

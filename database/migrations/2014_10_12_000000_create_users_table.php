@@ -1,3 +1,5 @@
+{{-- Create users table page: map out structure for users db: name, email, password, image --}}
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;

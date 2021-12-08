@@ -45,7 +45,6 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* store() takes all user inputs of a new user and store them into database  */
     public function store(Request $request)
     {
         //

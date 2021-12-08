@@ -1,3 +1,5 @@
+{{-- Login page: allow current "registered" users to login --}}
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
@@ -12,6 +14,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
+        {{-- validate login attempt via inputted information and stored value --}}
         <form method="POST" action="{{ route('login') }}">
             @csrf
 

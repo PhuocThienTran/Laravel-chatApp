@@ -1,3 +1,5 @@
+{{-- Create friendships table page: map out structure for friendships db: user_id, friendship_user_id --}}
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;

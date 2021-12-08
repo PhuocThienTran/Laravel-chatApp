@@ -9,6 +9,8 @@ class Message extends Model
 {
     use HasFactory;
 
+    /* The attributes that are mass assignable: user_id, message, image */
+
     protected $fillable = ['user_id', 'message', 'image'];
 
 

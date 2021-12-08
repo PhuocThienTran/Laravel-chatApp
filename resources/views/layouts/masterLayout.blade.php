@@ -1,3 +1,5 @@
+{{-- Master Template page: common structure for relevant pages --}}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,13 +11,8 @@
     <title>@yield('title')</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
-
-    
-
         <!-- Bootstrap core CSS -->
         <link href="{{asset('css/Core/bootstrapCore.css')}}" rel="stylesheet">
-
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -50,6 +47,7 @@
                     <a class="nav-link active" aria-current="page" href="{{url("friendship/create")}}">Add Friends</a>
                     </li>
                 </ul>
+                {{-- Logout --}}
                 @auth
                     <form class="d-flex" method="POST" action="{{url('/logout')}}">
                         {{csrf_field()}}

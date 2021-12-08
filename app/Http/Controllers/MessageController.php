@@ -1,5 +1,9 @@
 <?php
 
+/*
+    Controller page for message, where base functions are created for the Message class
+*/
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -11,7 +15,7 @@ use App\Models\Message;
 
 class MessageController extends Controller
 {
-    /* construct() for auth middleware, only index() and show() for "guests */
+    /* construct() for auth middleware, only index() and show() for "guests" */
     function __construct(){
         $this->middleware('auth');
     }
@@ -22,8 +26,6 @@ class MessageController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* index() is present in followingShow page with all the users' followings based on the Auth::id() of the user,
-        his/her reviews, and items */
     public function index()
     {
 
@@ -36,7 +38,7 @@ class MessageController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* store() takes all user inputs of a new review and store them into database  */
+    /* store() takes all user inputs of a new messge and store them into database  */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -45,6 +47,7 @@ class MessageController extends Controller
             'image'=>'image|nullable|max:255', 
 
         ]);
+        // Checks if message has image file, if not then image_store = ""
         if ($request->file('messageImage') == null) {
             $image_store = "";
         }else{
@@ -66,8 +69,7 @@ class MessageController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* show() displays all saved items in storage, with their respective paginated reviews
-    based on the $id of the item */
+    /* show() displays all saved items in storage based on the $id of the message */
     public function show($id)
     {
         $usermessage =  Message::all();

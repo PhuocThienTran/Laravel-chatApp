@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
+/* Friendships seeder page: init the friendships table and create base data for the db */
+
 class FriendshipsTableSeeder extends Seeder
 {
     /**

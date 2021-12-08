@@ -14,7 +14,7 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * The attributes that are mass assignable: name, email, password, image
      *
      * @var string[]
      */
@@ -45,6 +45,9 @@ class User extends Authenticatable
         'user_id' => 'array',
     ];
 
+    // userfriendship() binds friendships and users table via friendship_user_id withPivot friendship_user_id. 
+    // Thus, each user belongsToMany friendships.
+    
     function userfriendship() {
         return $this->belongsToMany('App\Models\User', 'friendships','user_id', 'friendship_user_id')->withPivot('friendship_user_id');
     }

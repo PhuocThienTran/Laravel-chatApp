@@ -29,12 +29,11 @@ Route::get('/', function () {
 
 Route::get('/home', [FriendshipController::class, 'index']);
 
-
+// All the corresponding routes for the associated resource are in its controller class
 Route::resource('friendship', FriendshipController::class);
 
 Route::resource('message', MessageController::class);
 
-/* all user route are in UserController */
 Route::resource('user', UserController::class);
 
 

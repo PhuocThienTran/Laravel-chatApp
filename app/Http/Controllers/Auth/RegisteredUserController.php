@@ -1,5 +1,9 @@
 <?php
 
+/*
+    Controller page for registering, where base functions are created for the Registering class
+*/
+
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
@@ -29,15 +33,13 @@ class RegisteredUserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    /* index() is present in followingShow page with all the users' followings based on the Auth::id() of the user,
-        his/her reviews, and items */
-        public function index()
-        {
-            $users = User::all();   
+    public function index()
+    {
+        $users = User::all();   
 
-            return view('home')
-            ->with('$users', $users);
-        }
+        return view('home')
+        ->with('$users', $users);
+    }
 
     /**
      * Handle an incoming registration request.
@@ -47,6 +49,8 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
+
+    /* store a new registered user into database via user input */
     public function store(Request $request)
     {
         $this->validate($request, [

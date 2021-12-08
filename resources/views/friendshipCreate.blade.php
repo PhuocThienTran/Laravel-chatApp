@@ -1,3 +1,5 @@
+{{-- FriendshipCreate page: see current auth users, add users as friends --}}
+
 @extends('layouts/masterLayout')
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
@@ -10,6 +12,7 @@
             <br><br>
             <h2>Select Users to Follow:</h2>
             <div class="col-md-12 order-md-1">
+                {{-- create a new friendship via current auth user id and current "registered" user id --}} 
                 <form method='POST' action='{{url("friendship")}}'>
                     {{csrf_field()}}
                     <label>Your ID is: </label>

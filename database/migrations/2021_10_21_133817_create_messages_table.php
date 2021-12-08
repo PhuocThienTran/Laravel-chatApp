@@ -1,3 +1,5 @@
+{{-- Create messages table page: map out structure for messages db: user_id, message, image --}}
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;

@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
+/* Users seeder page: init the users table and create base data for the db */
+
 class UsersTableSeeder extends Seeder
 {
     /**

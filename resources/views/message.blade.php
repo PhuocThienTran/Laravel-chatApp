@@ -1,3 +1,5 @@
+{{-- Message page: see current chat users, recent message, send message, send files --}}
+
 @extends('layouts/masterLayout')
 
     @section('title')
@@ -24,6 +26,7 @@
                             <h7>Users in this chat:</h7>                        
                         </div>
     
+                        {{-- individually display current users in chat --}}
                         <div class="list-group lg-alt">
                             @foreach($users as $user)
                                 <a class="list-group-item">
@@ -44,6 +47,7 @@
                         <br>
 
                         <div class="message-feed media">
+                            {{-- in each message, look for the corresponding user via aligning user->id and message->user_id --}}
                             @foreach($usermessage as $message)
                                 @foreach($users as $user)
                                     @if($user->id == $message->user_id)
@@ -51,6 +55,7 @@
                                         <div class="mf-content">
                                             <strong>{{$user->name}}: </strong>{{$message->message}}
                                             <br>
+                                            {{-- check if the message has an image, if no -> display image as "" --}}
                                             @if($message->image == "")
                                                 <small class="mf-date"><i class="fa fa-clock-o"></i> {{$message->created_at}}</small>                                    
                                             @else
@@ -67,6 +72,7 @@
                         </div>
                                     
 
+                        {{-- create a new message with image as an option --}}
                         <form method='POST' action='{{url("message")}}' enctype="multipart/form-data">
                             {{csrf_field()}}
                             <small class="d-block text-left mt-3">

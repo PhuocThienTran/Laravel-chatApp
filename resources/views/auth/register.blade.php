@@ -1,3 +1,5 @@
+{{-- Register page: allow users to register --}}
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
@@ -9,6 +11,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
+        {{-- validate login attempt via inputted information and stored value --}}
         <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
             {{csrf_field()}}
 

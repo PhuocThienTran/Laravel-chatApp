@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
+/* Messages seeder page: init the messages table and create base data for the db */
+
 class MessagesTableSeeder extends Seeder
 {
     /**
